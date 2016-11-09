@@ -1,0 +1,96 @@
+html,
+body,
+ul,
+li,
+dl,
+dt,
+dd,
+div,
+p,
+a {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+    }
+}
+@keyframes colorchange {
+    0% {
+        background-color: #000;
+        color:rgba(170, 170, 170, 0.5);
+    }
+    50% {
+        /*background-color: #900000;*/
+        /*box-shadow: 0 0 50px #f00;*/
+        background-color: #444;
+        color:#fff;
+        text-shadow: 0 0 20px #fff;
+    }
+    100% {
+        background-color: #000;
+        color:rgba(170, 170, 170, 0.5);
+    }
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.panel {
+    position: relative;
+    width: 300px;
+    height: 480px;
+    background-color: rgba(51, 51, 51, 0.79);
+    font-family: '微软雅黑';
+    background: url('../images/2.jpg') no-repeat center center;
+    background-size: cover;
+    display:none;
+}
+#fm {
+    position: absolute;
+    top: 130px;
+    left: 150px;
+    background-color: rgba(204, 204, 204, 0.5);
+}
+
+#fm .panel-min {
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    /*margin-bottom: -30px;
+    margin-left: -30px;*/
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    text-align:center;
+    line-height: 32px;
+    font-family: iconfont;
+    font-size: 20px;
+    color: rgba(170, 170, 170, 0.5);
+    background-color: #000;
+    cursor: pointer;
+}
+#fm .colorful-min {
+        animation-name: rotate;
+        animation-duration: 7s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        color: #fff;
+        text-shadow: 0 0 10px #fff;
+}
