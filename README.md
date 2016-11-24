@@ -3,7 +3,7 @@
 
 ## 线上预览网址：http://wkfmmusic.applinzi.com/；
 ## 新浪云：1031666476@qq.com；
-## 分支sae master:4
+## 分支：sae master:4
 ## 新浪云远程库地址：```$ git remote add sae https://git.sinacloud.com/wkfmmusic```
 
 
