@@ -199,6 +199,18 @@ GetMusic.prototype.onOff = function() {
             _this.$onoff.addClass('icon-start1');
         }
     })
+    this.$audio.on('play', function() {
+        if (_this.$onoff.hasClass('icon-start1')) {
+            _this.$onoff.removeClass('icon-start1');
+        }
+        _this.$onoff.addClass('icon-stop');
+    })
+    this.$audio.on('pause', function() {
+        if (_this.$onoff.hasClass('icon-stop')) {
+            _this.$onoff.removeClass('icon-stop');
+        }
+        _this.$onoff.addClass('icon-start1');
+    })
 }
 
 //  黑胶指针转动
