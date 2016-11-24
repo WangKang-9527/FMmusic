@@ -1,7 +1,11 @@
 # FMmusic
 
 
-## 线上预览网址：http://wkfmmusic.applinzi.com/；新浪云：1031666476@qq.com；库sae master:4
+## 线上预览网址：http://wkfmmusic.applinzi.com/；
+## 新浪云：1031666476@qq.com；
+## 分支sae master:4
+## 新浪云远程库地址：```$ git remote add sae https://git.sinacloud.com/wkfmmusic```
+
 
 #### 在```audio```中放了好几个```source```，为什么运行时只播放第一个音频就停止了？添加```audio```的```loop```属性也只是使其第一个循环播放。
 - audio标签的source属性不是说第一个播放完播放第二个，它是用来兼容浏览器的。不同浏览器兼容html5的播放格式是不同的。简单的说，如果浏览器第一个无法播放会用第二个，第二个不行就用第三个。目前html5只支持三种播放格式。基本上两种就能兼容全部浏览器。
